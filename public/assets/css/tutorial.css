@@ -1,214 +1,233 @@
-.containers {
-    width: 94vw;
-    height: 20vh;
-    margin-top: 8%;
-    margin-left: 3vw;
+.containere{
+    margin-top: 100px;
+    overflow-x: hidden;
 }
 
-.container-title {
-    font-size: 2.5vw;
-    font-family: 'Nunito';
-    margin-left: 1vw;
-    font-weight: 700;
+.titles{
+    width: 98%;
+    margin: auto;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.56);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+.titles h1{
+    font-size: 24px;
+}
+.pm-deadline-status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.56);
+    padding: 15px;
+    width: 98%;
+    margin: auto;
+}
+.pm-deadline-status p{
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
-.garis1 {
-    width: 94vw;
-    height: 0.1vh;
-    background-color: #9f9f9f;
-    margin-top: 1vw;
-}
-
-.garis2 {
-    width: 94vw;
-    height: 0.1vh;
-    background-color: #9f9f9f;
-    margin-top: 2vw;
-}
-
-.garis3 {
-    width: 46vw;
-    height: 0.1vh;
-    background-color: #9f9f9f;
-    margin-top: 1vw;
-    margin-left: 2vw;
-}
-
-.garis4 {
-    width: 94vw;
-    height: 0.1vh;
-    background-color: #9f9f9f;
-    margin-top: 2vw;
-}
-
-.garis5 {
-    width: 94vw;
-    height: 0.1vh;
-    background-color: #9f9f9f;
-    margin-top: 1vw;
-}
-
-.payment-deadline {
-    font-size: 1.6vw;
-    font-family: 'Nunito';
-    font-weight: 800;
-    margin-top: 2vw;
-}
-
-.isi-payment-deadline {
-    font-size: 1.6vw;
-    font-family: 'Nunito';
-    font-weight: 400;
-    margin-top: 2vw;
-    margin-left: 64vw;
-}
-
-.payment-status {
-    font-size: 1.6vw;
-    font-family: 'Nunito';
-    font-weight: 800;
-    margin-top: 1.5vw;
-}
-
-.isi-payment-status {
-    font-size: 1.6vw;
-    font-family: 'Nunito';
-    font-weight: 400;
-    margin-top: 1.5vw;
-    margin-left: 76vw;
-}
-
-.container-content {
-    width: 94vw;
-}
-
-.kotak-rekening {
-    width: 50vw;
-    height: 38vh;
-    border: solid 1px #9f9f9f;
+.bca-virt{
+    width: 550px;
+    margin: 30px auto;
+    border: 1px solid black;
+    padding: 10px 25px 35px;
     border-radius: 10px;
-    margin-top: 2vw;
-    margin-left: 22vw;
+    font-size: 18px;
 }
-
-.title-bank {
-    font-size: 1.8vw;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    margin-left: 2vw;
-    margin-top: 1.3vw;
+.row1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -30px;
+    height: 100px;
 }
-
-.title-logo-bank {
-    gap: 22vw;
-}
-
-.logo-bank {
-    width: 7vw;
-    height: 5vh;
-    margin-top: 1vw;
-}
-
-.title-virtual-account {
-    font-size: 1.5vw;
-    margin-left: 2vw;
-    margin-top: 1vw;
-    font-family: 'Nunito';
-    font-weight: 600;
-}
-
-.title-total-payment {
-    font-size: 1.5vw;
-    margin-left: 2vw;
-    margin-top: 1vw;
-    font-family: 'Nunito';
-    font-weight: 600;
-}
-
-.norek-account {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vw;
-    font-weight: 700;
-    margin-left: 2vw;
-}
-
-.total-pembayaran {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vw;
-    font-weight: 700;
-    margin-left: 2vw;
-}
-
-.total-payment {
-    gap: 1vw;
-}
-
-
-
-.rekening {
-    gap: 24vw;
-}
-
-.text-copy {
-    font-family: 'Nunito';
-    font-size: 1.5vw;
-    color: #77A4FF;
+.row1 p{
+    font-size: 20px;
     cursor: pointer;
-    font-weight: 800;
+    margin-top: 15px;
 }
-
-.copy iconify-icon{
-  font-family: 'Nunito';
-  font-size: 1.5vw;
-  color: #77A4FF;
-  cursor: pointer;
-  font-weight: 800;
-  margin: 3px 3px;
+.row1 img{
+    width: 80px;
+ 
 }
-
-
-.title-payment-internet-banking {
-    font-family: 'Nunito';
-    font-size: 2vw;
-    margin-top: 2vw;
+.row2{
+    border-top: 1px solid rgba(0, 0, 0, 0.555);
+    margin-top: -20px;
+    line-height: 5px;
+    padding-top: 20px;
+}   
+.row2 p:last-child{
     font-weight: 700;
 }
-
-.title-atm-bni {
-    font-family: 'Nunito';
-    font-size: 2vw;
-    margin-top: 2vw;
+.row3{
+    margin-top: 30px;
+    line-height: 5px;
+}
+.row3 p:last-child{
     font-weight: 700;
 }
+.right button{
+    background-color: transparent;
+    border: none;
+    color: #77A4FF;
+    font-weight: 600;
+    cursor: pointer;
+}
 
-.isi-cara-pembayaran {
-    font-family: 'Nunito';
-    font-size: 1vw;
+.right button:active{
+    color: #4166af;
+}
+
+.left button{
+    border: none;
+    background-color: transparent;
+    color: #77A4FF;
+    font-weight: 600;
+}
+.left button:active{
+    color: #4166af;
+}
+.row2 .right{
+    margin-left: 430px;
+    margin-top: -32px;
+}
+.right a{
+    color: #77A4FF;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.pib{
+    max-width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.56);
+    padding-bottom: 20px;
+    margin: 20px;
+}
+.pib .contents{
+    position: relative;
+    padding-bottom: 10px;
+}
+.pib .contents .label{
+    position: relative;
+    border-top: 1px solid black;
+    padding-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.pib .contents .label::before{
+    content: "+";
+    position: absolute;
+    top: 80%;
+    right: 20px;
+    transform: translateY(-90%);
+    font-size: 1.5em;
+}
+
+.pib .contents.contents.active .label::before{
+    content: "-";
+}
+
+.pib .contents .conteen{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5;
+    overflow-y: auto;
+}
+
+.pib .contents.active .conteen{
+    min-height: 350px;
+    padding: 20px;
+}
+
+/* MODALS */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 80px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 1vw;
-    margin-top: 2vw;
-}
+    gap: 15px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    height: 470px;
+  }
+  
+  /* The Close Button */
 
-.isi-cara-pembayaran-atm {
-    font-family: 'Nunito';
-    font-size: 1vw;
+  .totaal{
+    line-height: 15px;
+  }
+
+  .total-row1, .total-row2, .total-row3{
     display: flex;
-    flex-direction: column;
-    gap: 1vw;
-    margin-top: 2vw;
-}
+    justify-content: space-between;
+  }
 
-.payment-atm-bni {
-    padding-bottom: 70px;
-}
+  .total-row2 {
+   margin-bottom: 10px;
+    border-bottom: #000 solid 1px;
+  }
 
-.footer-simple {
-    display: none;
-}
+  .total-row3{
+    border-bottom: #000 solid 1px;
+    margin-bottom: 10px;
+  }
 
-.back-btn{
-  color: #000;
-  font-size: 30px;
-  margin: 7px 0px 0px;
-}
+  .payMRow1{
+    justify-content: space-between;
+    display: flex;
+  }
+  .p-item, .payment-m{
+    border-bottom: #000 solid 1px;
+    margin-bottom: 5px;
+  }
+  .ship-det{
+    display: flex;
+    justify-content: space-between;
+  }
+  .modal-content h1{
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .modal-content h5{
+    font-weight: 600;
+  }
+  
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    left: 47vw;
+    cursor: pointer;
+  }
+ 
