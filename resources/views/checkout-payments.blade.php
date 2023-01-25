@@ -54,7 +54,7 @@
         </div>
     </header>
     <div class="content">
-        <div class="right-content">
+        <div class="right-content" id="right">
             <div class="title-order">
                 <p>Summary Order</p>
             </div>
@@ -161,7 +161,7 @@
                 </div>
             </div>
         </div>
-        <div class="left-content">
+        <div class="left-content" id="left">
             <div class="title-order">
                 <p>Order Details</p>
             </div>
@@ -221,7 +221,7 @@
                             <button class="btn btn-primary mr-1" type="submit">Continue</button>
                         </div>
 
-                        <button>Cancel</button>
+                            <button type="button" class="btn-cancel">Cancel</button>
 
                     </div>
                 </form>
@@ -230,5 +230,20 @@
     </div>
 
 </div>
+{{-- <script>
+      window.onscroll = function() {myFunction()};
 
+var left = document.getElementById("left");
+var sticky = left.offsetTop + 400;
+
+console.log(left.offsetTop + 1154)
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    left.classList.add("sticky");
+  } else {
+    left.classList.remove("sticky");
+  }
+}
+</script> --}}
 @endsection

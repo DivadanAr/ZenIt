@@ -38,7 +38,7 @@
             </select>
         </div>
     </div>
-    <table border="1px" id="tableData">
+    <table border="1px" id="tableData" width="100%">
         <tr>
             <th style="width: 50px;">No.</th>
             <th>Invoice</th>
@@ -49,7 +49,7 @@
             <th>Payment Method</th>
             <th>Action</th>
         </tr>
-        @foreach($orders as $order)
+        @forelse($orders as $order)
         <tr>
             <td style="width: 50px;">{{ $loop->iteration }}</td>
             <td>{{ $order->invoice_no }}</td>
@@ -82,7 +82,14 @@
                 <a href="{{ route('cust.order.detail', $order->id) }}">Details</a>
             </td>
         </tr>
-        @endforeach
+        @empty
+        <tr>
+          <td colspan="8">
+              No record found!
+          </td>
+        </tr>
+
+        @endforelse
     </table>
 </div>
 

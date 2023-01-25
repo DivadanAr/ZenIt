@@ -104,7 +104,7 @@
         </div>
       </div>
     </div>
-    <div class="left-content">
+    <div class="left-content" id="fix">
       <div class="title-order">
         <p>Order Details</p>
       </div>
@@ -142,4 +142,18 @@
 
 </div>
 
+<script>
+  window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("fix");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 @endsection

@@ -19,7 +19,7 @@ var modalContainer = document.getElementById("modal-container")
         document.getElementById("img-cart-modal").src= imgCart;
         document.getElementById("ctgry-cart-modal").textContent= ctgryCart;
         document.getElementById("name-cart-modal").textContent= nameCart;
-        document.getElementById("price-cart-modal").textContent= priceCart;
+        document.getElementById("price-cart-modal").textContent= "Rp." + priceCart;
       }
     });
     
@@ -41,8 +41,10 @@ var modalContainer = document.getElementById("modal-container")
         document.getElementById("img-cart-modal").src = imgCart;
         document.getElementById("ctgry-cart-modal").textContent = ctgryCart;
         document.getElementById("name-cart-modal").textContent = nameCart;
-        document.getElementById("price-cart-modal").textContent = priceCart;
-        document.getElementById(id).className = 'fa-solid fa-heart';
+        document.getElementById("price-cart-modal").textContent = "Rp." + priceCart;
+        if(response != 'Cannot Add To Favorite!'){
+          document.getElementById(id).className = 'fa-solid fa-heart';
+        }
       }
     });
     

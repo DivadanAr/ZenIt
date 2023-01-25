@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="container">
-    <h3>Setting & Help Center</h3>
+    <h3 style="display: flex; align-items: center; gap: 10px;"><iconify-icon icon="mdi:gear"></iconify-icon>Setting & Help Center</h3>
 
     <div class="setting-content">
 

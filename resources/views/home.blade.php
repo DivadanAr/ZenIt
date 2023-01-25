@@ -83,8 +83,8 @@
           <p>{{ $products->last()->desc }}</p>
         </div>
         <div class="btn-featured">
-          <a href="checkout-delivery.html">
-          <button class="btn-buy"><i class="fa-solid fa-bag-shopping"></i>Buy Now</button></a>
+          {{-- <a href="checkout-delivery.html">
+          <button class="btn-buy"><i class="fa-solid fa-bag-shopping"></i>Buy Now</button></a> --}}
           <a href="{{ url('cart', $products->last()->id) }}" class="btn-cart"><i class="fa-solid fa-cart-shopping"></i>Add to cart</a>
         </div>
       </div>

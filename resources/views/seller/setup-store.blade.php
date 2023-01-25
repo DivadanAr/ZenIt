@@ -40,6 +40,7 @@
       <div class="store-name">
         <h1 class="judul-store">Major</h1>
         <select name="major" id="major"  class="input-name" style="height: 50px;">
+          <option value="" selected disabled >Choose Major</option>
           <option value="PPLG">PPLG</option>
           <option value="ANIMASI">ANIMASI</option>
           <option value="BRF">BRF</option>
