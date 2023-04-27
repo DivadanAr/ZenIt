@@ -22,6 +22,7 @@ use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\SellerReportController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\CustomerOrderController;
 use App\Http\Controllers\SellerProductController;
 use App\Http\Controllers\SellerScheduleController;
 use App\Http\Controllers\SellerdashboardController;
@@ -234,9 +235,10 @@ Route::get('/otpverification', function () {
     return view('otp-verif');
 })->name('otp');
 
-Route::get('/customer/order', function () {
-    return view('myorder');
-})->name('order');
+Route::get('/order/detail/{id}', [CustomerOrderController::class, 'detail'])->name('cust.order.detail');
+Route::get('/order', [CustomerOrderController::class, 'show'])->name('cust.order');
+Route::post('/order', [CustomerOrderController::class, 'getTable']);
+Route::post('/order/complete/{id}', [CustomerOrderController::class, 'Completed'])->name('cust.complete');
 
 
 Route::get('export/sale/data', [PController::class, 'export']);
